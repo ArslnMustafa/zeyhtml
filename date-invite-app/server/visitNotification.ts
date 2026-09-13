@@ -1,3 +1,5 @@
+import { friendlyDeviceName } from "./deviceModels";
+
 export type VisitorDevice = {
   summary: string;
   deviceModel?: string;
@@ -106,7 +108,8 @@ export function describeVisitorDevice(
     return { summary: "Bilinmeyen cihaz (tarayıcı bilgisi alınamadı)" };
   }
 
-  const deviceModel = detectDeviceModel(ua, clientHintModel);
+  const rawModel = detectDeviceModel(ua, clientHintModel);
+  const deviceModel = friendlyDeviceName(rawModel) ?? rawModel;
   const os = detectOs(ua);
   const browser = detectBrowser(ua);
 

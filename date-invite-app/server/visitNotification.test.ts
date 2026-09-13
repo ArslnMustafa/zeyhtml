@@ -38,7 +38,7 @@ describe("describeVisitorDevice", () => {
       "Mozilla/5.0 (Linux; Android 14; SM-S918B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
     );
 
-    expect(device.deviceModel).toBe("SM-S918B");
+    expect(device.deviceModel).toBe("Samsung Galaxy S23 Ultra");
     expect(device.os).toBe("Android 14");
     expect(device.browser).toContain("Chrome");
   });
@@ -49,7 +49,7 @@ describe("describeVisitorDevice", () => {
       '"Pixel 8 Pro"',
     );
 
-    expect(device.deviceModel).toBe("Pixel 8 Pro");
+    expect(device.deviceModel).toBe("Google Pixel 8 Pro");
   });
 
   it("handles a missing user agent", () => {
