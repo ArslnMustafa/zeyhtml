@@ -7,6 +7,7 @@ import { publicProcedure, router } from "./_core/trpc";
 import { createDateSubmission } from "./db";
 import { allowedDateSelections, allowedDateTimes, formatDateRequestNotification, latestSelectableDate } from "./dateSubmission";
 import { sendOwnerEmail } from "./email";
+import { extractClientIp, lookupVisitorLocation } from "./geoLocation";
 import { describeVisitorDevice, formatVisitNotification } from "./visitNotification";
 
 export const appRouter = router({
@@ -72,7 +73,14 @@ export const appRouter = router({
         const userAgent = Array.isArray(headers["user-agent"]) ? headers["user-agent"][0] : headers["user-agent"];
         const clientHintModel = Array.isArray(headers["sec-ch-ua-model"]) ? headers["sec-ch-ua-model"][0] : headers["sec-ch-ua-model"];
         const device = describeVisitorDevice(userAgent, clientHintModel);
-        const notificationContent = formatVisitNotification(input.page, device);
+        const clientIp = extractClientIp(headers, ctx.req.socket?.remoteAddress);
+        let location;
+        try {
+          location = await lookupVisitorLocation(clientIp);
+        } catch (error) {
+          console.warn("[Visit notification] The location lookup failed:", error);
+        }
+        const notificationContent = formatVisitNotification(input.page, device, location);
         try {
           ownerNotified = await notifyOwner({
             title: "Date sayfası ziyaret edildi",

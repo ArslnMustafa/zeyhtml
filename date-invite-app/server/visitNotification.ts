@@ -1,4 +1,5 @@
 import { friendlyDeviceName } from "./deviceModels";
+import type { VisitorLocation } from "./geoLocation";
 
 export type VisitorDevice = {
   summary: string;
@@ -119,7 +120,11 @@ export function describeVisitorDevice(
   return { summary, deviceModel, os, browser };
 }
 
-export function formatVisitNotification(page: string, device?: VisitorDevice): string {
+export function formatVisitNotification(
+  page: string,
+  device?: VisitorDevice,
+  location?: VisitorLocation,
+): string {
   const lines = [
     "Date davet sayfası ziyaret edildi.",
     `Açılan bölüm: ${page}`,
@@ -136,6 +141,10 @@ export function formatVisitNotification(page: string, device?: VisitorDevice): s
     if (device.browser) {
       lines.push(`Tarayıcı: ${device.browser}`);
     }
+  }
+
+  if (location) {
+    lines.push(`Yaklaşık konum: ${location.summary}`);
   }
 
   lines.push("Bu bildirim tarayıcı oturumu başına yalnızca bir kez gönderilir.");
