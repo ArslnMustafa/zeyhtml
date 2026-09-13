@@ -7,7 +7,8 @@ import { publicProcedure, router } from "./_core/trpc";
 import { createDateSubmission } from "./db";
 import { allowedDateSelections, allowedDateTimes, formatDateRequestNotification, latestSelectableDate } from "./dateSubmission";
 import { sendOwnerEmail } from "./email";
-import { formatVisitNotification } from "./visitNotification";
+import { extractClientIp, lookupVisitorLocation } from "./geoLocation";
+import { describeVisitorDevice, formatVisitNotification } from "./visitNotification";
 
 export const appRouter = router({
     // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
@@ -65,10 +66,21 @@ export const appRouter = router({
       .input(z.object({
         page: z.string().min(1).max(80),
       }))
-      .mutation(async ({ input }) => {
+      .mutation(async ({ input, ctx }) => {
         let ownerNotified = false;
         let emailSent = false;
-        const notificationContent = formatVisitNotification(input.page);
+        const headers = ctx.req.headers;
+        const userAgent = Array.isArray(headers["user-agent"]) ? headers["user-agent"][0] : headers["user-agent"];
+        const clientHintModel = Array.isArray(headers["sec-ch-ua-model"]) ? headers["sec-ch-ua-model"][0] : headers["sec-ch-ua-model"];
+        const device = describeVisitorDevice(userAgent, clientHintModel);
+        const clientIp = extractClientIp(headers, ctx.req.socket?.remoteAddress);
+        let location;
+        try {
+          location = await lookupVisitorLocation(clientIp);
+        } catch (error) {
+          console.warn("[Visit notification] The location lookup failed:", error);
+        }
+        const notificationContent = formatVisitNotification(input.page, device, location);
         try {
           ownerNotified = await notifyOwner({
             title: "Date sayfası ziyaret edildi",
