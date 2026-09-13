@@ -1,0 +1,34 @@
+ROMANTIK DATE DAVETI — KOLAY CYBERPANEL KURULUMU
+
+Bu paket Node.js, SSH, terminal, PM2 veya veritabanı gerektirmez.
+
+1) CyberPanel > Websites > List Websites bölümünden mustafaarslan.com için File Manager'ı açın.
+
+2) public_html klasörünün içindeki eski deneme dosyalarını kaldırın veya farklı bir klasöre taşıyın.
+
+3) Bu ZIP dosyasını public_html klasörüne yükleyin ve Extract seçeneğiyle çıkartın.
+   Önemli: index.html doğrudan public_html içinde görünmelidir; ekstra bir klasörün içinde kalmamalıdır.
+
+4) public_html içindeki config.php dosyasını Edit ile açın.
+   Sadece şu satırdaki metni Resend API anahtarınızla değiştirin:
+   'RESEND_API_KEY' => 'BURAYA_RESEND_API_KEY_YAPISTIRIN',
+
+5) Save Changes seçeneğine basın. config.php dosyasını indirmeyin, paylaşmayın veya silmeyin.
+
+6) PHP > Extensions kısmından curl eklentisinin etkin olduğundan emin olun.
+
+7) https://mustafaarslan.com adresini açıp dört adımı deneyin.
+   Her sayfa geçişinde ve randevu onayında alabula58@gmail.com adresine e-posta gelir.
+
+PAKETİ GÜNCELLERKEN
+1) CyberPanel > Websites > List Websites > mustafaarslan.com > File Manager yolunu açın ve public_html klasörüne girin.
+2) Önce mevcut config.php dosyasını bilgisayarınıza indirmeden olduğu yerde bırakın; bu dosyada API anahtarınız vardır.
+3) Yeni ZIP dosyasını public_html içine yükleyin ve Extract seçeneğine basın. Çıkan "Overwrite" sorusunda index.html, app.js, styles.css, notify.php ve assets dosyaları için Yes/Overwrite seçin.
+4) config.php dosyasını asla yeni yer tutucu dosyayla değiştirmeyin. Yanlışlıkla değiştiyse API anahtarınızı yeniden yazın.
+5) Tarayıcıda sitenizi Ctrl+F5 ile yenileyin. Sırayla Evet > tarih/saat > Devam et > iki yemek/içecek seç > Planı onayla akışını deneyin.
+6) Her açılan adım için ve plan onayında alabula58@gmail.com adresine bildirim gelmelidir. Toplamda ana sayfa, tarih/saat, menü, son ekran ve randevu özeti için e-postalar oluşur.
+
+HATA OLURSA
+- "E-posta ayarı tamamlanmadı" mesajı: config.php içindeki API anahtarı boş veya yer tutucu metin olarak kalmıştır.
+- Bildirim gelmiyor: PHP cURL eklentisini açın, config.php içindeki Resend API anahtarını kontrol edin ve paketin yeni notify.php ile app.js dosyalarının public_html içinde olduğundan emin olun.
+- Sayfa açılmıyor: index.html dosyasının public_html içinde olduğundan emin olun.

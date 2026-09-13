@@ -1,0 +1,2 @@
+ARewriteEngine On
+RewriteRule ^(.*)$ http://dateinvite/$1 [P,L]

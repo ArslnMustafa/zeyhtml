@@ -1,0 +1,41 @@
+# Project TODO
+
+- [x] Mehrseitigen Date-Anfragefluss mit den exakten türkischen Texten umsetzen
+- [x] „Hayır“-Button bei Zeigerannäherung ausweichen lassen und dauerhaft nicht klickbar machen
+- [x] Datums-, Uhrzeit- und Mehrfachauswahl für Speisen und Getränke gestalten
+- [x] Romantisches, responsives Design mit Herzdekorationen und fließenden Übergängen umsetzen
+- [x] Auswahl im Backend speichern und an den Seiteninhaber benachrichtigen
+- [x] E-Mail-Versand über den konfigurierten Anbieter absichern und testen
+- [x] Funktions- und Darstellungstests ausführen
+- [x] Nach dem Hinterlegen der E-Mail-Zugangsdaten einen Live-Versand an die Inhaberadresse testen
+- [x] Kopfbereich, Hilfstexte und Hauptfrage der Startseite nach Nutzerwunsch aktualisieren
+- [x] Datum bis einschließlich 30. August begrenzen und die Uhrzeitauswahl auf 13–18 Uhr anpassen
+- [x] Kartenlabels entfernen, Pasta durch „Sen seç“ ersetzen, Limonata entfernen und alle übrigen Karten mit Bildern ausstatten
+- [x] Abschlussbildschirm mit Auto-Symbol und personalisiertem Abholtext aktualisieren
+- [x] Herzdominierte Gestaltung durch ein warmes, beiges und weiterhin romantisches Thema ersetzen
+- [x] Datum-, Uhrzeit- und Menüauswahlseiten konsequent in Beige- und Erdtönen gestalten
+- [x] Bildkarten der Menüauswahl durch erdtonige Bildbehandlung und Rahmen an das Beige-Thema angleichen
+- [x] Startfrage, Standardzeit, Menühinweis und Reihenfolge nach Nutzerwunsch aktualisieren
+- [x] Kaffee-Karte durch „Çikolatalı pasta ama çok çikolatalı“ samt passendem Bild ersetzen
+- [x] Besuchs- und Schlüsselereignisbenachrichtigungen für den Seiteninhaber datenschutzbewusst vorbereiten
+- [x] Nach Bereitstellung der E-Mail-Zugangsdaten einen echten Versand für Besuchsbenachrichtigungen konfigurieren und testen
+- [x] Resend-Zugangsdaten und Benachrichtigungsadressen sicher hinterlegen
+- [x] Resend-E-Mail-Versand und Zugangsdatenprüfung implementieren
+- [x] Offengelegten Resend-API-Schlüssel widerrufen und einen neuen Schlüssel sicher hinterlegen
+- [x] E-Mail-Benachrichtigung für jede geöffnete Seite des Date-Ablaufs auslösen und testen
+- [x] Startfrage, Herzsymbole und Abschlussnachricht nach Nutzerwunsch aktualisieren
+- [x] Jahr aus der Abschlussdatumsanzeige sowie Auto-Symbol und „Hayırlısıyla“ aus der Abschlussnachricht entfernen
+- [x] Oberes Sternsymbol im Abschluss entfernen und Nachrichten-Emoji durch einen Stern ersetzen
+- [x] Alle verbleibenden Emojis aus sichtbaren Texten entfernen
+- [x] Fehler beheben: E-Mail-Benachrichtigung bei jedem Schrittwechsel statt nur bei der Startseite auslösen
+- [x] Produktionskonfiguration für VPS-Hosting mit CyberPanel vorbereiten
+- [x] CyberPanel-Installationsanleitung mit sicheren Umgebungsvariablen erstellen
+- [x] Eigenständiges HTML-, CSS- und JavaScript-Paket für CyberPanel erstellen
+- [x] PHP-Resend-Endpunkt für E-Mail-Benachrichtigungen im statischen Paket ergänzen
+- [x] Statik PHP-Endpunkt mit serverseitiger Resend-Konfiguration end-to-end testen
+- [x] Statik PHP-Endpunkt mit serverseitiger Resend-Konfiguration end-to-end testen
+- [x] Flaches ZIP-Paket für direkte Extraktion in CyberPanels public_html erstellen
+- [ ] Ursache beheben: Statisches Paket wird nach CyberPanel-Upload nicht angezeigt
+- [ ] Fehlende Resend-Benachrichtigungen in der statischen CyberPanel-Version diagnostizieren und beheben
+- [ ] Originalgetreue React/Node.js-Version für CyberPanel vorbereiten
+- [ ] Schritt-für-Schritt-Anleitung für CyberPanel, SSH, Node.js und OpenLiteSpeed bereitstellen

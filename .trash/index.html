@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Romantik date daveti" />
+    <title>Date Daveti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <div class="ambient ambient-one">✧</div>
+      <div class="ambient ambient-two">✧</div>
+      <div class="ambient ambient-three">✧</div>
+      <div class="ambient ambient-four">✧</div>
+
+      <section id="step-1" class="screen active intro-screen" aria-labelledby="intro-title">
+        <div class="intro-symbol" aria-hidden="true">✧</div>
+        <h1 id="intro-title">Sınavlar bittiğine göre,<br />kafa dağıtmaya ne dersin?</h1>
+        <p>Birlikte güzel bir gün planlamaya ne dersin?</p>
+        <div id="answer-area" class="answer-area">
+          <button id="yes-button" class="button primary" type="button">Evet</button>
+          <button id="no-button" class="button secondary no-button" type="button">Hayır</button>
+        </div>
+        <small>İpucu: “Hayır” biraz utangaç.</small>
+      </section>
+
+      <section id="step-2" class="screen" aria-labelledby="schedule-title" hidden>
+        <div class="progress" aria-label="2. adım"><span></span><span class="active"></span><span></span><span></span></div>
+        <div class="schedule-card">
+          <div class="date-panel">
+            <div class="section-heading"><span class="section-icon">▣</span><div><h2 id="schedule-title">Bir gün seçelim</h2><p>Takvimden uygun bir tarih seç.</p></div></div>
+            <div class="calendar" aria-label="Ağustos 2026 tarih seçimi">
+              <div class="calendar-header"><span aria-hidden="true">‹</span><strong>Ağustos 2026</strong><span aria-hidden="true">›</span></div>
+              <div class="calendar-weekdays" aria-hidden="true"><span>Pt</span><span>Sa</span><span>Ça</span><span>Pe</span><span>Cu</span><span>Ct</span><span>Pz</span></div>
+              <div id="calendar-days" class="calendar-days" role="grid" aria-label="Ağustos 2026 günleri"></div>
+            </div>
+          </div>
+          <div class="time-panel">
+            <div class="section-heading"><span class="section-icon">◷</span><div><h2>Saat kaçta?</h2><p>Buluşma için bir saat belirle.</p></div></div>
+            <div id="time-options" class="time-options" role="radiogroup" aria-label="Saat seçimi"></div>
+            <div class="schedule-summary"><span>Buluşma planı</span><strong id="schedule-text"></strong></div>
+            <button id="to-menu" class="button primary full" type="button">Devam et</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="step-3" class="screen" aria-labelledby="menu-title" hidden>
+        <div class="progress" aria-label="3. adım"><span></span><span></span><span class="active"></span><span></span></div>
+        <div class="menu-intro"><span>EN GÜZEL KISMI</span><h2 id="menu-title">Ne yiyelim, ne içelim?</h2><p>Birden fazla seçebilirsin.</p></div>
+        <div id="menu-options" class="menu-grid"></div>
+        <div class="menu-footer"><p id="selection-count">Seçim yapmayı unutma.</p><button id="confirm-date" class="button primary" type="button" disabled>Planı onayla</button></div>
+      </section>
+
+      <section id="step-4" class="screen final-screen" aria-labelledby="final-title" hidden>
+        <h1 id="final-title">Süper, anlaştık!</h1>
+        <p id="final-message"></p>
+        <article class="final-card">
+          <div class="final-row"><span class="section-icon">▣</span><div><small>Randevu bilgileri</small><strong id="final-date"></strong><b id="final-time"></b></div></div>
+          <hr />
+          <div class="final-row"><span class="section-icon">✧</span><div><small>Seçtiklerin</small><ul id="final-foods" class="selected-foods" aria-label="Seçilen yemek ve içecekler"></ul></div></div>
+        </article>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
