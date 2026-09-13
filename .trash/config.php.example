@@ -1,0 +1,7 @@
+<?php
+// Bu dosya yalnızca yedektir. Normal kurulumda doğrudan config.php dosyasını düzenleyin.
+return [
+  'RESEND_API_KEY' => 'BURAYA_RESEND_API_KEY_YAPISTIRIN',
+  'DATE_NOTIFY_EMAIL' => 'alabula58@gmail.com',
+  'RESEND_FROM_EMAIL' => 'onboarding@resend.dev',
+];

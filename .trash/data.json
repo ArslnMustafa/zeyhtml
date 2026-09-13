@@ -1,0 +1,73 @@
+{
+  "buildings": [
+    { 
+      "name": "Palast der Republik", 
+      "location": "Berlin", 
+      "architect": "Heinz Graffunder", 
+      "year": "1973–1976", 
+      "style": "Ost-Moderne", 
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Bundesarchiv_Bild_183-1986-0424-304%2C_Berlin%2C_Palast_der_Republik.jpg", 
+      "features": ["Volkshaus", "Bronzeverspiegelte Fenster"],
+      "questions": [
+        { "text": "Erläutern Sie die städtebauliche Situation vor und nach der Errichtung des Palastes der Republik.", "points": "4 P.", "sol": "Vorher stand dort das Berliner Stadtschloss (1950 gesprengt). Nach dem Abriss steht dort heute das Humboldt Forum. Die Höhendominanz im Zentrum wurde auf den Fernsehturm verlagert." },
+        { "text": "Wie verbinden sich bei diesem Gebäude politische Intention und Architektur?", "points": "3 P.", "sol": "Die Architektur und die Funktion als 'Volkshaus' (Kultur, Gastronomie, Parlament unter einem Dach) drückten politische Offenheit und Bürgernähe aus." },
+        { "text": "Wer war der Architekt und durch welche materiellen Signale zeichnete sich die Fassade aus?", "points": "3 P.", "sol": "Entworfen von Heinz Graffunder; markantes Bildsignal waren die bronzeverspiegelten Fenster und die Stahl-Skelett-Konstruktion." }
+      ]
+    },
+    { 
+      "name": "Neue Staatsgalerie Stuttgart", 
+      "location": "Stuttgart", 
+      "architect": "James Stirling", 
+      "year": "1977–1984", 
+      "style": "Postmoderne", 
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Neue_Staatsgalerie_Stuttgart_2014_01.jpg", 
+      "features": ["Stein + grelle Industriefarben", "Öffentlicher Fußweg"],
+      "questions": [
+        { "text": "Wer entwarf die Neue Staatsgalerie und welchem Stil ist sie zuzuordnen?", "points": "2 P.", "sol": "Entworfen von James Stirling, Michael Wilford & Associates (1977–1984); Hauptwerk der Postmoderne." },
+        { "text": "Was sind die inhaltlichen Merkmale und Materialkontraste dieses postmodernen Baus?", "points": "4 P.", "sol": "Kritik am reinen Funktionalismus; provokanter Mix aus schwerem, traditionalem Naturstein (Monumentalität) und grellen, bunten Industriefarben bei Geländern und Rohren." },
+        { "text": "Welche städtebauliche Besonderheit integriert der Entwurf in den öffentlichen Raum?", "points": "4 P.", "sol": "Ein offener, öffentlich zugänglicher Fußweg führt als Rampen- und Wegesystem mitten durch den Museumskomplex hindurch." }
+      ]
+    },
+    { 
+      "name": "Berliner Philharmonie vs. Elbphilharmonie", 
+      "location": "Berlin / Hamburg", 
+      "architect": "Hans Scharoun / Herzog & de Meuron", 
+      "year": "1957–2016", 
+      "style": "Organische Moderne / Zeitgenössisch", 
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Sydney_Opera_House_-_1._March_2014.jpg", 
+      "features": ["Musik im Zentrum", "Backstein & Glas"],
+      "questions": [
+        { "text": "Nennen Sie Architekten, Bauzeiten und Baustile beider Konzerthäuser.", "points": "3 P.", "sol": "Berliner Philharmonie: Hans Scharoun (1957–1963, Organische Moderne). Elbphilharmonie: Herzog & de Meuron (2007–2016, Zeitgenössisch)." },
+        { "text": "Welches räumliche Leitmotiv prägt beide Konzertsäle im inneren Aufbau?", "points": "4 P.", "sol": "Das Leitmotiv 'Schall und Musik im Zentrum', bei dem die Zuschauerränge terrassenförmig und asymmetrisch um die zentrale Bühne angeordnet sind." },
+        { "text": "Worin besteht der wesentliche materialtechnische und städtebauliche Kontrast?", "points": "3 P.", "sol": "Berliner Philharmonie ist ein freistehender, zeltartig gefalteter Solitär im Kulturforum. Die Elbphilharmonie verbindet historische Industriearchitektur (Backstein-Kaispeicher) mit einem futuristischen Glasaufbau." }
+      ]
+    },
+    { 
+      "name": "Neues Frankfurt & Frankfurter Küche", 
+      "location": "Frankfurt a.M.", 
+      "architect": "Ernst May & Margarete Schütte-Lihotzky", 
+      "year": "1925–1930", 
+      "style": "Neues Bauen", 
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Frankfurterkueche.jpg", 
+      "features": ["Licht, Luft & Sonne", "Taylorismus"],
+      "questions": [
+        { "text": "Wer war die treibende Kraft hinter dem 'Neuen Frankfurt' und was waren die städtebaulichen Ziele?", "points": "4 P.", "sol": "Ernst May (Stadtbaurat); Ziel war rationeller, standardisierter Massenwohnungsbau nach dem Leitbild 'Licht, Luft und Sonne' (Zeilenbau)." },
+        { "text": "Nennen Sie drei prägende Siedlungen dieses großangelegten Wohnungsbauprogramms.", "points": "3 P.", "sol": "Die Siedlungen Praunheim, Römerstadt und Westhausen." },
+        { "text": "Welches wirtschaftlich-industrielle Prinzip steckte hinter der Entwicklung der 'Frankfurter Küche' (1926)?", "points": "3 P.", "sol": "Der Taylorismus (radikale Optimierung und Verkürzung von Arbeitswegen zur zeitlichen Entlastung der erwerbstätigen Frau)." }
+      ]
+    }
+  ],
+  "epochsData": [
+    { "period": "1950er – 1970er", "title": "Brutalismus", "desc": "Leitet sich von französisch *béton brut* (roher Beton) ab. Charakteristisch ist die radikale Sichtbarmachung von Material, rohen Betonoberflächen und plastischer Massivität.", "arch": "Gottfried Böhm (Pilgerkirche Neviges), Le Corbusier (Unité d'Habitation)" },
+    { "period": "ca. 1910 – 1930er", "title": "Klassische Moderne", "desc": "Bewusster Bruch mit dem Historismus. Fokus auf Funktion, Licht, Luft, Stahlbeton und Stahlskelettbau.", "arch": "Le Corbusier (Villa Savoye), Walter Gropius (Bauhaus Dessau)" },
+    { "period": "1970er – 1990er", "title": "Postmoderne", "desc": "Gegenbewegung zum strengen Funktionalismus. Wiederbelebung von Farbe, Ironie, historischen Zitaten und Ornamenten.", "arch": "Charles Moore, James Stirling (Neue Staatsgalerie Stuttgart)" },
+    { "period": "ab den 1980er", "title": "Dekonstruktivismus", "desc": "Vermeidung rechter Winkel, instabile, stürzende Linien und Aufbrechen geometrischer Ordnungen als dynamische Skulptur.", "arch": "Zaha Hadid, Frank O. Gehry, Daniel Libeskind" }
+  ],
+  "theoryItems": [
+    { "q": "Welche gesellschaftlichen Entwicklungen waren laut Skript die Treiber der 'Modernisierung'?", "a": "Die Vorlesung identifiziert mehrere Schlüsselfaktoren: Industrialisierung, Nationalstaaten, Bürgertum und Armut." },
+    { "q": "Gibt es in der Architektur einen echten 'Bauhaus-Stil'?", "a": "Nein, es gibt nicht die EINE Moderne und KEINEN einheitlichen 'Bauhaus-Stil'." }
+  ],
+  "zeynepSpecialQuestions": [
+    { "title": "Zeynep'in Venedik'te en sevdiği dondurmacı hangisidir?", "correct": "SuSo Eis", "options": ["SuSo Eis", "Gelateria di Santa Fosca", "Alaska Gelato", "Nico", "Rialto"], "image": "https://quadro.burda-forward.de/ctf/971287e9-bb36-4498-b1cf-61c926b12d8e.6b1f0779-0bd1-4915-a470-724ffc58943f.jpg?im=RegionOfInterestCrop=(2121,1414),regionOfInterest=(995,690)&hash=26e18c3515eb9c23d88ee2e7f16ea44faaeedc1a69f64733eec1299168f3eb75", "style": "Venedig Spezial", "features": ["Handgemachtes Eis"] }
+  ]
+}
